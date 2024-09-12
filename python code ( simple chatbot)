@@ -1,0 +1,21 @@
+#chatbot
+
+import time
+
+now = time.ctime()
+qna = {
+    "hi":"hey",
+    "what is your name":"my name is tejas",
+    "how old are you ":"i am 20 years old",
+    "what is the time now": now
+
+}
+
+while True:
+    qs = input("type your qustion here :")
+
+    if (qs == "quit"):
+        break
+    else:
+        print(qna[qs])
+        
